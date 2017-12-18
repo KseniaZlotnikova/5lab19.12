@@ -1,0 +1,62 @@
+﻿@using Microsoft.AspNetCore.Http;
+@using Newtonsoft.Json;
+@using UrbanTraffic.ViewModel;
+@using UrbanTraffic.Models
+@model IndexViewModel
+@addTagHelper "*,  UrbanTraffic"
+
+<h2>Routes</h2>
+<div class="container">
+    <form method="get" role="form" class="form-horizontal">
+
+        <div class="form-group">
+
+            <label class="control-label">Название: </label>
+            @Html.TextBox("Name", Model.FilterRoutesViewModel.SelectedName, htmlAttributes: new { @class = "form-control" })
+
+            <label class="control-label">Время путешествия:</label>
+            @Html.TextBox("TravelTime", Model.FilterRoutesViewModel.SelectedTravelTime, htmlAttributes: new { @class = "form-control" })
+
+            <label class="control-label">Расстояние:</label>
+            @Html.TextBox("Distance", Model.FilterRoutesViewModel.SelectedDistance, htmlAttributes: new { @class = "form-control" })
+
+            <br>
+            <input type="submit" value="Отфильтровать" class="btn btn-default" />
+        </div>
+    </form>
+</div>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th><a asp-action="Index" asp-route-sortOrder="@ViewBag.NameSort">Название</a></th>
+            <th><a asp-action="Index" asp-route-sortOrder="@ViewBag.TravelTimeSort">Время путешествия</a></th>
+            <th><a asp-action="Index" asp-route-sortOrder="@ViewBag.DistanceSort">Расстояние</a></th>
+            <th>Действия</th>
+        </tr>
+<tbody>
+
+@foreach (var item in Model.Routes) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stopping.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TravelTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Distance)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Подробно</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<page-link page-model="Model.PageViewModel" page-action="Index"></page-link>

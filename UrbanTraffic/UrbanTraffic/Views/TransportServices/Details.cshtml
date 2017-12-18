@@ -1,0 +1,48 @@
+﻿@model UrbanTraffic.TransportService
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TransportService</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Change)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Change)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Employees)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Employees.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Routes)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Routes.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeOfTransport)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TypeOfTransport.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

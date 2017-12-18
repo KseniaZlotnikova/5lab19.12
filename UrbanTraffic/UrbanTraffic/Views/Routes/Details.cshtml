@@ -1,0 +1,42 @@
+﻿@model UrbanTraffic.Routes
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Routes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TravelTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TravelTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Distance)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Distance)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpressRoute)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ExpressRoute)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Stopping)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Stopping.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

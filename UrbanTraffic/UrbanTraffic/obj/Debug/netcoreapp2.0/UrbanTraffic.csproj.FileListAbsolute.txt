@@ -1,0 +1,22 @@
+C:\Users\Никита\Desktop\Зк\Ксения Злотникова\5 lab\UrbanTraffic\UrbanTraffic\obj\Debug\netcoreapp2.0\UrbanTraffic.csproj.CoreCompileInputs.cache
+C:\Users\Никита\Desktop\Зк\Ксения Злотникова\5 lab\UrbanTraffic\UrbanTraffic\obj\Debug\netcoreapp2.0\UrbanTraffic.AssemblyInfoInputs.cache
+C:\Users\Никита\Desktop\Зк\Ксения Злотникова\5 lab\UrbanTraffic\UrbanTraffic\obj\Debug\netcoreapp2.0\UrbanTraffic.AssemblyInfo.cs
+C:\Users\Никита\Desktop\Зк\Ксения Злотникова\5 lab\UrbanTraffic\UrbanTraffic\obj\Debug\netcoreapp2.0\UrbanTraffic.csprojResolveAssemblyReference.cache
+C:\Users\Никита\Desktop\Зк\Ксения Злотникова\5 lab\UrbanTraffic\UrbanTraffic\bin\Debug\netcoreapp2.0\UrbanTraffic.deps.json
+C:\Users\Никита\Desktop\Зк\Ксения Злотникова\5 lab\UrbanTraffic\UrbanTraffic\bin\Debug\netcoreapp2.0\UrbanTraffic.runtimeconfig.json
+C:\Users\Никита\Desktop\Зк\Ксения Злотникова\5 lab\UrbanTraffic\UrbanTraffic\bin\Debug\netcoreapp2.0\UrbanTraffic.runtimeconfig.dev.json
+C:\Users\Никита\Desktop\Зк\Ксения Злотникова\5 lab\UrbanTraffic\UrbanTraffic\bin\Debug\netcoreapp2.0\UrbanTraffic.dll
+C:\Users\Никита\Desktop\Зк\Ксения Злотникова\5 lab\UrbanTraffic\UrbanTraffic\bin\Debug\netcoreapp2.0\UrbanTraffic.pdb
+C:\Users\Никита\Desktop\Зк\Ксения Злотникова\5 lab\UrbanTraffic\UrbanTraffic\obj\Debug\netcoreapp2.0\UrbanTraffic.dll
+C:\Users\Никита\Desktop\Зк\Ксения Злотникова\5 lab\UrbanTraffic\UrbanTraffic\obj\Debug\netcoreapp2.0\UrbanTraffic.pdb
+C:\Users\Никита\Desktop\5 lab\UrbanTraffic\UrbanTraffic\bin\Debug\netcoreapp2.0\UrbanTraffic.deps.json
+C:\Users\Никита\Desktop\5 lab\UrbanTraffic\UrbanTraffic\bin\Debug\netcoreapp2.0\UrbanTraffic.runtimeconfig.json
+C:\Users\Никита\Desktop\5 lab\UrbanTraffic\UrbanTraffic\bin\Debug\netcoreapp2.0\UrbanTraffic.runtimeconfig.dev.json
+C:\Users\Никита\Desktop\5 lab\UrbanTraffic\UrbanTraffic\bin\Debug\netcoreapp2.0\UrbanTraffic.dll
+C:\Users\Никита\Desktop\5 lab\UrbanTraffic\UrbanTraffic\bin\Debug\netcoreapp2.0\UrbanTraffic.pdb
+C:\Users\Никита\Desktop\5 lab\UrbanTraffic\UrbanTraffic\obj\Debug\netcoreapp2.0\UrbanTraffic.csprojResolveAssemblyReference.cache
+C:\Users\Никита\Desktop\5 lab\UrbanTraffic\UrbanTraffic\obj\Debug\netcoreapp2.0\UrbanTraffic.csproj.CoreCompileInputs.cache
+C:\Users\Никита\Desktop\5 lab\UrbanTraffic\UrbanTraffic\obj\Debug\netcoreapp2.0\UrbanTraffic.AssemblyInfoInputs.cache
+C:\Users\Никита\Desktop\5 lab\UrbanTraffic\UrbanTraffic\obj\Debug\netcoreapp2.0\UrbanTraffic.AssemblyInfo.cs
+C:\Users\Никита\Desktop\5 lab\UrbanTraffic\UrbanTraffic\obj\Debug\netcoreapp2.0\UrbanTraffic.dll
+C:\Users\Никита\Desktop\5 lab\UrbanTraffic\UrbanTraffic\obj\Debug\netcoreapp2.0\UrbanTraffic.pdb
