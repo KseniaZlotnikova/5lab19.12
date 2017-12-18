@@ -9,6 +9,7 @@ using UrbanTraffic;
 using UrbanTraffic.Models;
 using UrbanTraffic.ViewModel.Account;
 using UrbanTraffic.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 
 namespace UrbanTraffic.Controllers
 {
@@ -21,7 +22,7 @@ namespace UrbanTraffic.Controllers
             _context = context;
         }
 
-
+        [Authorize(Roles = "admin,user")]
         // GET: Employees
         public IActionResult Index(string Name, float TravelTime, float Distance, int page = 1, SortState sortOrder = SortState.NameAsc)
         {
@@ -85,7 +86,7 @@ namespace UrbanTraffic.Controllers
 
         }
 
-
+        [Authorize(Roles = "admin,user")]
         // GET: Routes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -104,14 +105,14 @@ namespace UrbanTraffic.Controllers
 
             return View(routes);
         }
-
+        [Authorize(Roles = "admin")]
         // GET: Routes/Create
         public IActionResult Create()
         {
             ViewData["StoppingId"] = new SelectList(_context.Stopping, "Id", "Name");
             return View();
         }
-
+        [Authorize(Roles = "admin")]
         // POST: Routes/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -128,7 +129,7 @@ namespace UrbanTraffic.Controllers
             ViewData["StoppingId"] = new SelectList(_context.Stopping, "Id", "Name", routes.StoppingId);
             return View(routes);
         }
-
+        [Authorize(Roles = "admin")]
         // GET: Routes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -145,7 +146,7 @@ namespace UrbanTraffic.Controllers
             ViewData["StoppingId"] = new SelectList(_context.Stopping, "Id", "Name", routes.StoppingId);
             return View(routes);
         }
-
+        [Authorize(Roles = "admin")]
         // POST: Routes/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -181,7 +182,7 @@ namespace UrbanTraffic.Controllers
             ViewData["StoppingId"] = new SelectList(_context.Stopping, "Id", "Name", routes.StoppingId);
             return View(routes);
         }
-
+        [Authorize(Roles = "admin")]
         // GET: Routes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -200,7 +201,7 @@ namespace UrbanTraffic.Controllers
 
             return View(routes);
         }
-
+        [Authorize(Roles = "admin")]
         // POST: Routes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

@@ -9,6 +9,7 @@ using UrbanTraffic.Models;
 using UrbanTraffic.ViewModel.Filter;
 using UrbanTraffic.ViewModel;
 using UrbanTraffic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace UrbanTraffic.Controllers.TableControler
 {
@@ -21,7 +22,7 @@ namespace UrbanTraffic.Controllers.TableControler
             _context = context;
         }
 
-
+        [Authorize(Roles = "admin,user")]
         public IActionResult Index(string Name, float ArrivaTime, int page = 1, SortState sortOrder = SortState.NameAsc)
         {
             int pageSize = 10;
@@ -74,6 +75,7 @@ namespace UrbanTraffic.Controllers.TableControler
         }
 
 
+        [Authorize(Roles = "admin,user")]
 
         // GET: Schedules/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -94,6 +96,7 @@ namespace UrbanTraffic.Controllers.TableControler
             return View(schedule);
         }
 
+        [Authorize(Roles = "admin")]
         // GET: Schedules/Create
         public IActionResult Create()
         {
@@ -117,7 +120,7 @@ namespace UrbanTraffic.Controllers.TableControler
             ViewData["TypeOfTransportId"] = new SelectList(_context.TypeOfTransport, "Id", "Name", schedule.TypeOfTransportId);
             return View(schedule);
         }
-
+        [Authorize(Roles = "admin")]
         // GET: Schedules/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -134,7 +137,7 @@ namespace UrbanTraffic.Controllers.TableControler
             ViewData["TypeOfTransportId"] = new SelectList(_context.TypeOfTransport, "Id", "Name", schedule.TypeOfTransportId);
             return View(schedule);
         }
-
+        [Authorize(Roles = "admin")]
         // POST: Schedules/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -170,7 +173,7 @@ namespace UrbanTraffic.Controllers.TableControler
             ViewData["TypeOfTransportId"] = new SelectList(_context.TypeOfTransport, "Id", "Name", schedule.TypeOfTransportId);
             return View(schedule);
         }
-
+        [Authorize(Roles = "admin")]
         // GET: Schedules/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -189,7 +192,7 @@ namespace UrbanTraffic.Controllers.TableControler
 
             return View(schedule);
         }
-
+        [Authorize(Roles = "admin")]
         // POST: Schedules/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

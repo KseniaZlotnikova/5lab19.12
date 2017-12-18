@@ -7692,7 +7692,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.0.0": {
-      "sha512": "UIlELB0laoUrkGRcMLwUpek6sUXtlxToDsAg0xU4gQvDGYIfe7bBJjka54XBHq/TZEsZ0NipOaFiNQOfRTd2xA==",
+      "sha512": "BnwDYYhhcTQjQBHtWQIazvys3lLTkYACtud71/PkySzKThcUYC5DWzunxQRWHGGmNPIJFhyVjTPWI/hUSDX72g==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.contracts/2.0.0",
       "files": [
@@ -7714,7 +7714,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Design/2.0.0": {
-      "sha512": "14dGqnnOnNxKGrGZKFQGGzMDtQ23WVuIOZkcH5KE0LeHEhjc+9u8raAiFhXnRu8P/PHpXjbcgW/Zdq71sSqnlg==",
+      "sha512": "x/59+v1bezqdgFrFzNrUIaOMcVOIdloHjUDcNbP6KV52CCbu+go6MiCUhZxMGvvNiDNM1qEPXWWImshp60dyxg==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.design/2.0.0",
       "files": [
@@ -8009,7 +8009,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.1": {
-      "sha512": "ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
+      "sha512": "g79oP1HXgcRhY6Ip167aMp2HPqIfWZh+QPiVjxooXdeyzXL7rvBYIflOyoUulcke5t1uaNAO4qLJP46QVKCsyw==",
       "type": "package",
       "path": "newtonsoft.json/10.0.1",
       "files": [
@@ -8046,7 +8046,7 @@
       ]
     },
     "NuGet.Frameworks/4.0.0": {
-      "sha512": "WCkN68c8q+USG+Ot1MmBDH+9DUo5dk7UB0QDMiwCYhrH7ZoFLKFGGNzJ8C3LTR1DvB1LW9BOxKeznnZznKiCTA==",
+      "sha512": "E7XCgE2YYpGaAs5C7LoK2qtOByv8p15xpX1uszOXQ99v64U70k0kg3lFu9VD2J+bzaA2HYTbN0slAatkFQ4NJA==",
       "type": "package",
       "path": "nuget.frameworks/4.0.0",
       "files": [
@@ -11208,7 +11208,7 @@
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/4.4.0": {
-      "sha512": "9dLLuBxr5GNmOfl2jSMcsHuteEg32BEfUotmmUkmZjpR3RpVHE8YQwt0ow3p6prwA1ME8WqDVZqrr8z6H8G+Kw==",
+      "sha512": "FZiVwy25sVUxJRmbjYC7LU1ydPvl64Zw8G96+eSNwf3BGWt79gfKgXV+a73zi7Abp2LDdG0i44FPiJzF0TGPGQ==",
       "type": "package",
       "path": "system.runtime.compilerservices.unsafe/4.4.0",
       "files": [
@@ -13180,11 +13180,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Никита\\Desktop\\5 lab\\UrbanTraffic\\UrbanTraffic\\UrbanTraffic.csproj",
+      "projectUniqueName": "C:\\Users\\Никита\\Desktop\\UrbanTraffic\\UrbanTraffic\\UrbanTraffic.csproj",
       "projectName": "UrbanTraffic",
-      "projectPath": "C:\\Users\\Никита\\Desktop\\5 lab\\UrbanTraffic\\UrbanTraffic\\UrbanTraffic.csproj",
+      "projectPath": "C:\\Users\\Никита\\Desktop\\UrbanTraffic\\UrbanTraffic\\UrbanTraffic.csproj",
       "packagesPath": "C:\\Users\\Никита\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Никита\\Desktop\\5 lab\\UrbanTraffic\\UrbanTraffic\\obj\\",
+      "outputPath": "C:\\Users\\Никита\\Desktop\\UrbanTraffic\\UrbanTraffic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

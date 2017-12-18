@@ -9,6 +9,7 @@ using UrbanTraffic;
 using UrbanTraffic.Models;
 using UrbanTraffic.ViewModel;
 using UrbanTraffic.ViewModel.Filter;
+using Microsoft.AspNetCore.Authorization;
 
 namespace UrbanTraffic.Controllers.TableControler
 {
@@ -22,6 +23,7 @@ namespace UrbanTraffic.Controllers.TableControler
         }
 
         // GET: Employees
+        [Authorize(Roles = "admin,user")]
         public IActionResult Index(string Name, string Surname, string MiddleName,int page = 1, SortState sortOrder = SortState.NameAsc)
         {
             int pageSize = 10;
@@ -81,7 +83,7 @@ namespace UrbanTraffic.Controllers.TableControler
             return View(ivm);
 
         }
-
+        [Authorize(Roles = "admin,user")]
         // GET: Employees/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -121,7 +123,7 @@ namespace UrbanTraffic.Controllers.TableControler
             }
             return View(employees);
         }
-
+        [Authorize(Roles = "admin")]s
         // GET: Employees/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -137,7 +139,7 @@ namespace UrbanTraffic.Controllers.TableControler
             }
             return View(employees);
         }
-
+        [Authorize(Roles = "admin")]
         // POST: Employees/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -172,7 +174,7 @@ namespace UrbanTraffic.Controllers.TableControler
             }
             return View(employees);
         }
-
+        [Authorize(Roles = "admin")]
         // GET: Employees/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -190,7 +192,7 @@ namespace UrbanTraffic.Controllers.TableControler
 
             return View(employees);
         }
-
+        [Authorize(Roles = "admin")]
         // POST: Employees/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

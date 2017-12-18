@@ -34,6 +34,11 @@ namespace UrbanTraffic.Controllers
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
+                    await _userManager.AddToRoleAsync(user, "user");
+                }
+
+                if (result.Succeeded)
+                {
                     // установка куки
                     await _signInManager.SignInAsync(user, false);
                     return RedirectToAction("Index", "Home");
